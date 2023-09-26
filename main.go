@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"strings"
 )
 
@@ -11,7 +12,10 @@ func Bar() string {
 }
 
 func main() {
-
+	a := 1
+	if a == 1 {
+		log.Fatal("test err")
+	}
 	fmt.Println("vim-go")
 	fmt.Println("hello world")
 	fmt.Println(strings.ToUpper("good"))
